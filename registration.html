@@ -1,0 +1,229 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">SkillHub Institute</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="registration.html">
+                        Registration
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-5">
+
+    <h2 class="text-center mb-4">
+        Course Registration Form
+    </h2>
+
+    <div class="alert alert-info">
+        Fill in the details below to register for your preferred course.
+    </div>
+
+    <form>
+
+        <div class="mb-3">
+            <label class="form-label">
+                Student Name
+            </label>
+
+            <input type="text"
+                   class="form-control"
+                   required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">
+                Email
+            </label>
+
+            <input type="email"
+                   class="form-control"
+                   required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">
+                Mobile Number
+            </label>
+
+            <input type="tel"
+                   class="form-control"
+                   pattern="[0-9]{10}"
+                   required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">
+                Gender
+            </label>
+
+            <select class="form-select" required>
+                <option>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">
+                Course Selection
+            </label>
+
+            <select class="form-select" required>
+                <option>Select Course</option>
+                <option>Web Development</option>
+                <option>Python Programming</option>
+                <option>Data Science</option>
+                <option>AI & Machine Learning</option>
+                <option>Java Programming</option>
+                <option>Cloud Computing</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">
+                Qualification
+            </label>
+
+            <input type="text"
+                   class="form-control"
+                   placeholder="B.Tech / Degree / Diploma"
+                   required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">
+                Address
+            </label>
+
+            <textarea class="form-control"
+                      rows="4"
+                      required></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">
+                Upload Resume
+            </label>
+
+            <input type="file"
+                   class="form-control"
+                   required>
+        </div>
+
+        <div class="form-check mb-4">
+            <input class="form-check-input"
+                   type="checkbox"
+                   required>
+
+            <label class="form-check-label">
+                I agree to the Terms and Conditions
+            </label>
+        </div>
+
+        <button type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#successModal">
+            Register Now
+        </button>
+
+    </form>
+
+</div>
+
+<!-- Modal -->
+
+<div class="modal fade"
+     id="successModal"
+     tabindex="-1">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    Registration Successful
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="alert alert-success">
+                    You have successfully registered for the course.
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button"
+                        class="btn btn-primary"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="bg-dark text-white text-center p-4 mt-5">
+    <p>© 2026 SkillHub Institute</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+```
