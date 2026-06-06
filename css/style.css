@@ -1,0 +1,44 @@
+```css
+body{
+    font-family: Arial, sans-serif;
+}
+
+.card{
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card-img-top{
+    height:220px;
+    object-fit:cover;
+}
+
+footer{
+    margin-top:50px;
+}
+
+.rounded-circle{
+    height:100px;
+    width:100px;
+    object-fit:cover;
+}
+
+.hero-section{
+    background:#f8f9fa;
+}
+
+@media(max-width:768px){
+
+    .display-4{
+        font-size:2rem;
+    }
+
+    .card-img-top{
+        height:180px;
+    }
+}
+```
